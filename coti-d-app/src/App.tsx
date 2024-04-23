@@ -6,9 +6,15 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+    const initData = window.Telegram.WebApp.initData;
+
+    console.log("Web app user")
+    console.log(window.Telegram.WebApp)
+
   return (
     <>
       <div>
+          <div>InitData: {initData}</div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
