@@ -6,9 +6,12 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+    // @ts-ignore
     const initData = window.Telegram.WebApp.initData;
 
     console.log("Web app user")
+
+    // @ts-ignore
     console.log(window.Telegram.WebApp)
 
   return (
