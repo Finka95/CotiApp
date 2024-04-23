@@ -25,9 +25,9 @@ jobs:
         with:
           node-version: '20'
       - name: Install Dependencies
-        run: npm install
+        run: cd coti-d-app && npm install
       - name: Build React App
-        run: npm run build
+        run: cd coti-d-app && npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
